@@ -30,7 +30,6 @@ class dynatraceoneagent::install {
     extract        => false,
     source         => $download_link,
     path           => $download_path,
-    allow_insecure => true,
     require        => File[$download_dir],
     creates        => $created_dir,
   }
